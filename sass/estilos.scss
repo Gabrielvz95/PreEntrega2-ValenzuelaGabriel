@@ -1,0 +1,79 @@
+@import "../sass/utilities/variables.scss";
+
+
+.body-grid{
+    display: grid;
+    
+    grid-template-areas:
+    "header"
+    "main "
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 75% 5%;
+}
+
+header{
+    background-color: $color-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    div{
+        margin-top: 10px;
+        h1{
+            color: #D4AF37;
+            font-size: 80px;
+        }
+    }
+    nav{
+        background-color: $color-4;
+        width: 100%;
+        height: 40px;
+        ul{
+            height: 30px;
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                list-style: none;
+                
+                a{
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: black; 
+                }
+            }
+            
+        }
+    }
+    
+}
+
+main{
+    background-color: $color-2;
+    .contenedor-formulario{
+        width: 100%;
+        height: 100vh;
+        background-color: $color-3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .formulario{
+            background-color: $color-2;
+            width: 30rem;
+            height: 600px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+footer{
+    background-color: $color-1;
+}
