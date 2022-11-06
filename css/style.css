@@ -52,12 +52,16 @@ main {
     align-items: center; }
     main .contenedor-formulario .formulario {
       background-color: #256D85;
-      width: 30rem;
+      width: 90%;
       height: 600px;
-      padding: 10px;
+      padding: 20px;
       margin: 10px;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: space-around; }
+      main .contenedor-formulario .formulario input {
+        height: 40px;
+        width: 200px; }
 
 footer {
   background-color: #06283D; }
