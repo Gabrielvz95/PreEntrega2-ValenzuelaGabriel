@@ -41,16 +41,30 @@ const usuario = {
 function resta(a, b){ 
     return a + b;
 }
-//  comparando la edad minima con la calculada 
+// Comparando la edad minima con la calculada 
 let edad = resta(usuario.FechaNacimiento, fechaActual);
 if(edad >= 18){ 
     console.log("Edad aceptada")
-    sueldo = prompt("Ingresa ingresos mensuales: ")
 }else{
     console.log("Para salicitar un prestamo tiene que ser mayor de edad")
 }
-
 console.log('Datos personales aceptados')
-alert("Perfecto"+usuario.Nombre, Apellido);
+    alert("Perfecto"+usuario.Nombre, "tus datos personales fueron aceptados\nAcontinuacion te haremos algunas preguntas mas.");
+
+// Solicitud de informacion finaciera 
+let trabajo = prompt('¿A que te dedicas?:')
+let antiguedadLaboral = prompt('¿Hace cuantos años trabajas?:')
+let tipoDeTrabajo = prompt("Por favor ingrese el numero de la opcion.\nEres:\n 1 - Relacion de dependencia\n 2 - Monitributista\n 3 - Empleador\n 4 - Pyme")
+
+const informacionLaboral = {
+    trabajo: trabajo,
+    Antiguedad: antiguedadLaboral,
+    Relacion: tipoDeTrabajo
+}
+
+if(antiguedadLaboral > 1){
+    
+}
+
 
 
