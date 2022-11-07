@@ -9,7 +9,7 @@
     "main "
     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 20% 75% 5%;
+    grid-template-rows: 15% 80% 5%;
 }
 
 header{
@@ -60,17 +60,34 @@ main{
         background-color: $color-3;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        h2{
+            margin: 10px;
+            font-size: 30px;
+        }
         .formulario{
+            width: 95%;
+            height: 80vh;
             background-color: $color-2;
-            width: 90%;
-            height: 600px;
             padding: 20px;
             margin: 10px;
+            border-radius: 10px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            align-items: center;
+            .datos-personales{
+                width: 90%;
+                height: 100%;
+                margin: 10px;
+                padding: 10px;
+            }
+            .datos-laborales{
+                width: 90%;
+                height: 100%;
+                margin: 10px;
+                padding: 10px;
+            }
             input{
                 height: 40px;
                 width: 200px;
@@ -82,4 +99,12 @@ main{
 
 footer{
     background-color: $color-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3{
+        color: white;
+        text-align: center;
+    }
+
 }

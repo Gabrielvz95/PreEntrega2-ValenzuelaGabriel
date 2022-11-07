@@ -1,5 +1,5 @@
 
-alert("Bienvenidos a Eduart Bank.\nPor favor complete los campos solicitados.")
+alert("Bienvenidos a Edward Bank.\nPor favor complete los campos solicitados.")
 
 // Datos de Usuario solicitante
 let nombreIngresado = prompt("Nombre: ");
@@ -49,11 +49,11 @@ if(edad >= 18){
     console.log("Para salicitar un prestamo tiene que ser mayor de edad")
 }
 console.log('Datos personales aceptados')
-    alert("Perfecto"+usuario.Nombre, "tus datos personales fueron aceptados\nAcontinuacion te haremos algunas preguntas mas.");
+    alert("tus datos personales fueron aceptados.\nAcontinuacion te haremos algunas preguntas mas.");
 
 // Solicitud de informacion finaciera 
-let trabajo = prompt('¿A que te dedicas?:')
-let antiguedadLaboral = prompt('¿Hace cuantos años trabajas?:')
+let trabajo = prompt('¿A que te dedicas?')
+let antiguedadLaboral = prompt('¿Hace cuantos años trabajas?')
 let tipoDeTrabajo = prompt("Por favor ingrese el numero de la opcion.\nEres:\n 1 - Relacion de dependencia\n 2 - Monitributista\n 3 - Empleador\n 4 - Pyme")
 
 const informacionLaboral = {
@@ -61,10 +61,35 @@ const informacionLaboral = {
     Antiguedad: antiguedadLaboral,
     Relacion: tipoDeTrabajo
 }
+// Simulacion de prestamo
 
-if(antiguedadLaboral > 1){
-    
+let montoIngresado = prompt("Ingresar el monto del prestamo:");
+let plazoCuotas = prompt("Ingresar el plazo (cuotas):");
+let interesAnual;
+
+function calculadoraProcentaje(a, b){
+    return a * b / 100
 }
+function dividir(a, b){
+    return a / b
+}
+
+//eleva el interes dependiendo las cuotas
+if(plazoCuotas <= 1){
+    interesAnual = 10;
+}else if(plazoCuotas < 12){
+    interesAnual = 85;
+}else(plazoCuotas < 24);{
+    interesAnual = 120;
+}
+
+let montoCalculado = calculadoraProcentaje(montoIngresado, interesAnual);
+let montoCuotas = dividir(montoCalculado, plazoCuotas);
+
+console.log("Perfecto" +usuario.Nombre);
+console.log("Tus cuotas son:" +plazoCuotas,"De:" +montoCuotas, "Cada una.");
+
+
 
 
 

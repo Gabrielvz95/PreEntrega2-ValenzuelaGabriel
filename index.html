@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/main.js"></script>
+    
     <title>Prestamos</title>
 </head>
 <body class="body-grid">
@@ -28,15 +28,14 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <section class="contenedor-formulario">
             <h2>
                 Solicitud de prestamo
             </h2>
             <form class="formulario" action="">
-                <fieldset>
-                    <label for="">Nombre</label>
+                <fieldset class="datos-personales">
+                <label for="">Nombre</label>
                 <input type="text">
                 <label for="">Apellido</label>
                 <input type="text">
@@ -48,17 +47,30 @@
                 <input type="text">
                 <label for="">Estado civil</label>
                 <input type="text" id="">
-
                 </fieldset>
-                
-
+                <fieldset class="datos-laborales">
+                    <label for="">¿A que te dedicas?</label>
+                    <input type="text">
+                    <label for="">¿Hace cuanto trabajas?</label>
+                    <input type="text">
+                    <label for="">Relacion de dependencia</label>
+                    <select name="" id="">
+                        <option value="">Empleado</option>
+                        <option value="">Empleador</option>
+                        <option value="">Monitributista</option>
+                        <option value="">Pyme</option>
+                    </select>
+                </fieldset>
+                <input type="button" value="Enviar">
             </form>
-
         </section>
         
     </main>
     <footer>
-        Edward Bank S.A - Todos los derechos reservadors - 2022
+        <h3>
+            Edward Bank S.A - Todos los derechos reservadors - 2022
+        </h3>
     </footer>
 </body>
+<!-- <script src="/js/main.js"></script> -->
 </html>
