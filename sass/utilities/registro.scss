@@ -1,0 +1,45 @@
+.main-registro{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/img/bank-inicio.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    .registro-user{
+        background-color: rgba(0, 0, 0, 0.700);
+        width: 600px;
+        height: 700px;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 2px;
+        backdrop-filter:blur(5px);
+        .form-registro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            legend{
+                background-color: $color-griscur;
+                width: auto;
+                padding: 10px;
+                border-radius: 5px;
+                h2{
+                    color: white;
+                }
+            }
+            input{
+                height: 50px;
+                width: 500px;
+                border-radius: 10px;
+                margin: 25px 0px 20px 0px;
+                border-width: 1px;
+                border-style: hidden;
+                box-shadow:  black 0px 0px 2px;
+                font-size: 20px;
+                text-align: center;
+                
+            } 
+        }
+
+    }
+}

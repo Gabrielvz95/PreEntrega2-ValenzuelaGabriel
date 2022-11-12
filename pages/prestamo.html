@@ -20,7 +20,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="">Servicios</a></li>
                 <li><a href="">Prestamos</a></li>
                 <li><a href="">Tienda</a></li>
@@ -29,55 +29,56 @@
         </nav>
     </header>
     <main class="main-prestamos">
-        <section class="contenedor-formulario">
-            <h2>
-                Solicitud de prestamo
-            </h2>
-            <form class="formulario" action="">
-                <fieldset class="datos-personales">
-                <label class="label-prestamo" for="">Nombre</label>
+        <form class="formulario" action="">
+            <fieldset class="datos-personales">
+                <legend class="sub-formulario">
+                    <h2 class="titulos-secciones-formulario">
+                        Solicitud de prestamo personal
+                    </h2>
+                </legend>
+            <input class="input-prestamo" type="text" placeholder="Nombre">
+            <input class="input-prestamo" type="text" placeholder="Apellidos">
+            <label class="label-prestamo" for="">Fecha de nacimiento</label>
+            <input class="input-prestamo" type="date" placeholder="Numero de D.N.I">
+            <input class="input-prestamo" type="tel" placeholder="Numero de telefono">
+            <label class="label-prestamo" for="">Nacionalidad</label>
+            <select class="input-prestamo" name="" id="">
+                <option value="">Argentina</option>
+                <option value="">Chile</option>
+                <option value="">Uruguay</option>
+                <option value="">Bolivia</option>
+                <option value="">Peru</option>
+                <option value="">Ecuador</option>
+                <option value="">Brasil</option>
+            </select>
+            <label class="label-prestamo" for="">Estado civil</label>
+            <select class="input-prestamo" name="" id="">
+                <option value="">Soltero</option>
+                <option value="">Casado</option>
+                <option value="">Divorciado</option>
+                <option value="">Viudo</option>  
+            </select>
+            </fieldset>
+            <fieldset class="datos-laborales">
+                <legend class="sub-formulario" >
+                    <h3 class="titulos-secciones-formulario">
+                        Datos Laborales
+                    </h3>
+                </legend>
+                <label class="label-prestamo" for="">¿A que te dedicas?</label>
                 <input class="input-prestamo" type="text">
-                <label class="label-prestamo" for="">Apellido</label>
+                <label class="label-prestamo" for="">¿Hace cuanto trabajas?</label>
                 <input class="input-prestamo" type="text">
-                <label class="label-prestamo" for="">Fecha de nacimiento</label>
-                <input class="input-prestamo" type="date">
-                <label class="label-prestamo" for="">D.N.I</label>
-                <input class="input-prestamo" type="tel">
-                <label class="label-prestamo" for="">Nacionalidad</label>
-                <input class="input-prestamo" type="text">
-                <label class="label-prestamo" for="">Estado civil</label>
+                <label class="label-prestamo" for="">Relacion de dependencia</label>
                 <select class="input-prestamo" name="" id="">
-                    <option value="">Argentina</option>
-                    <option value="">Chile</option>
-                    <option value="">Uruguay</option>
-                    <option value="">Bolivia</option>
-                    <option value="">Peru</option>
-                    <option value="">Ecuador</option>
-                    <option value="">Brasil</option>
+                    <option value="">Empleado</option>
+                    <option value="">Empleador</option>
+                    <option value="">Monitributista</option>
+                    <option value="">Pyme</option>
                 </select>
-                </fieldset>
-                <fieldset class="datos-laborales">
-                    <legend>
-                        <h3>
-                            Datos Laborales
-                        </h3>
-                    </legend>
-                    <label class="label-prestamo" for="">¿A que te dedicas?</label>
-                    <input class="input-prestamo" type="text">
-                    <label class="label-prestamo" for="">¿Hace cuanto trabajas?</label>
-                    <input class="input-prestamo" type="text">
-                    <label class="label-prestamo" for="">Relacion de dependencia</label>
-                    <select class="input-prestamo" name="" id="">
-                        <option value="">Empleado</option>
-                        <option value="">Empleador</option>
-                        <option value="">Monitributista</option>
-                        <option value="">Pyme</option>
-                    </select>
-                </fieldset>
-                <input type="button" value="Enviar">
-            </form>
-        </section>
-        
+            </fieldset>
+            <input id="boton-prestamo" type="button" value="Enviar Solicitud">
+        </form>
     </main>
     <footer>
         <h3>
