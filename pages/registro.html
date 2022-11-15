@@ -20,7 +20,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
+                <li><a href="/index.html">Inicio</a></li>
                 <li><a href="">Servicios</a></li>
                 <li><a href="/pages/prestamo.html">Prestamos</a></li>
                 <li><a href="">Tienda</a></li>
@@ -30,18 +30,18 @@
     </header>
     <main class="main-registro">
         <section class="registro-user">
-            <form class="form-registro" action="">
+            <form id="form-registro">
                 <legend>
                     <h2>
                         Crear Usuario 
                     </h2>
                 </legend>
-                <input id="new-user" type="text" placeholder="Nombre de Usuario">
-                <input id="new-email" type="email" placeholder="Ejemplo@edwardbank.com">
-                <input id="password" type="password" placeholder="Repetir contraseña">
+                <input id="new-user" type="text" placeholder="Nombre de Usuario" maxlength="12">
+                <input id="new-email" type="email" placeholder="Ejemplo@edwardbank.com" >
+                <input id="password" type="password" placeholder="contraseña" >
                 <p id="password-error"></p>
-                <input id="repet-password" type="password" placeholder="Contraseña">
-                <input id="boton-registro" type="button" value="Registrarse">
+                <input id="repet-password" type="password" placeholder="Repetir Contraseña" >
+                <input id="boton-registro" type="submit" value="Registrarse" >
             </form>
         </section> 
     </main>
