@@ -29,30 +29,22 @@
         </nav>
     </header>
     <main class="main-prestamos">
-        <form class="formulario" action="">
+        <form class="formulario" id="form-simulador">
             <fieldset class="datos-personales">
                 <legend class="sub-formulario">
                     <h2 class="titulos-secciones-formulario">
                         Solicitud de prestamo personal
                     </h2>
                 </legend>
-            <input class="input-prestamo" type="text" placeholder="Nombre">
-            <input class="input-prestamo" type="text" placeholder="Apellidos">
-            <label class="label-prestamo" for="">Fecha de nacimiento</label>
-            <input class="input-prestamo" type="date" placeholder="Numero de D.N.I">
-            <input class="input-prestamo" type="tel" placeholder="Numero de telefono">
-            <label class="label-prestamo" for="">Nacionalidad</label>
-            <select class="input-prestamo" name="" id="">
-                <option value="">Argentina</option>
-                <option value="">Chile</option>
-                <option value="">Uruguay</option>
-                <option value="">Bolivia</option>
-                <option value="">Peru</option>
-                <option value="">Ecuador</option>
-                <option value="">Brasil</option>
+            <input id="nombre-sim" class="input-prestamo" type="text" placeholder="Nombre" required>
+            <input id="apellido-sim" class="input-prestamo" type="text" placeholder="Apellidos" required >
+            <p id="edad-error"></p>
+            <input id="edad-sim" class="input-prestamo" type="number" placeholder="Edad" required>
+            <input id="num-dni" class="input-prestamo" type="tel" placeholder="Numero de D.N.I" required>
+            <input id="num-tel" class="input-prestamo" type="tel" placeholder="Numero de telefono" required>
             </select>
             <label class="label-prestamo" for="">Estado civil</label>
-            <select class="input-prestamo" name="" id="">
+            <select class="input-prestamo" name="" id="estado-civil" required>
                 <option value="">Soltero</option>
                 <option value="">Casado</option>
                 <option value="">Divorciado</option>
@@ -62,22 +54,17 @@
             <fieldset class="datos-laborales">
                 <legend class="sub-formulario" >
                     <h3 class="titulos-secciones-formulario">
-                        Datos Laborales
+                        Solicitud de prestamo
                     </h3>
                 </legend>
-                <label class="label-prestamo" for="">¿A que te dedicas?</label>
-                <input class="input-prestamo" type="text">
-                <label class="label-prestamo" for="">¿Hace cuanto trabajas?</label>
-                <input class="input-prestamo" type="text">
-                <label class="label-prestamo" for="">Relacion de dependencia</label>
-                <select class="input-prestamo" name="" id="">
-                    <option value="">Empleado</option>
-                    <option value="">Empleador</option>
-                    <option value="">Monitributista</option>
-                    <option value="">Pyme</option>
-                </select>
+                <label class="label-prestamo" for="">¿Cuanto ganas por mes?</label>
+                <p id="salario-error"></p>
+                <input id="salario-ing" class="input-prestamo" type="text" required>
+                <label id="antiguedad-sim" class="label-prestamo" for="">¿Hace cuanto trabajas?</label>
+                <p id="antiguedad-error"></p>
+                <input class="input-prestamo" type="number" required>
             </fieldset>
-            <input id="boton-prestamo" type="button" value="Enviar Solicitud">
+            <input type="submit" value="Enviar Solicitud">
         </form>
     </main>
     <footer>
@@ -85,6 +72,6 @@
             Edward Bank S.A - Todos los derechos reservadors - 2022
         </h3>
     </footer>
-    <!-- <script src="/js/main.js"></script> -->
+    <script src="/js/prestamo.js"></script>
 </body>
 </html>

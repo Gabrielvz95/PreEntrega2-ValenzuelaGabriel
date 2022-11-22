@@ -1,3 +1,47 @@
+// Inicio Sesion
+const inicioSesion = document.getElementById('form-sesion');
+const usuarioIngreado = document.getElementById('usuario-ingresado');
+const contraseñaIngresada = document.getElementById('contraseña-ingresada');
+const warning = document.getElementById('login-error')
+const contenedorLogin = document.getElementById('form-sesion');
+
+const usuariosRegistrados = localStorage.getItem('usuario1');
+const usuarioLocal = JSON.parse(usuariosRegistrados);
+const waringUsuario = document.getElementById('waring')
+
+
+inicioSesion.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (usuarioIngreado.value == usuarioLocal.nombreUsuario && contraseñaIngresada.value == usuarioLocal.contraseñaUsuario){ // validacion de usuario
+        window.location.href = "/pages/prestamo.html";
+    }else{
+        console.log('Usuario no encontrado')
+        waringUsuario.innerText = ('Usuario o Contraseña Incorrecto')
+        
+    }
+    inicioSesion.reset();
+})
+
+
+
+
+// console.log(usuarioLocal.nombreUsuario);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // alert("Bienvenidos a Edward Bank.\nPor favor complete los campos solicitados.")
 
@@ -61,11 +105,12 @@
 //     Antiguedad: antiguedadLaboral,
 //     Relacion: tipoDeTrabajo
 // }
-// // Simulacion de prestamo
 
-// let montoIngresado = prompt("Ingresar el monto del prestamo:");
-// let plazoCuotas = prompt("Ingresar el plazo (cuotas):");
-// let interesAnual;
+//Simulacion de prestamo
+
+//  let montoIngresado = prompt("Ingresar el monto del prestamo:");
+//  let plazoCuotas = prompt("Ingresar el plazo (cuotas):");
+// // let interesAnual;
 
 // function calculadoraProcentaje(a, b){
 //     return a * b / 100
@@ -76,11 +121,11 @@
 
 // //eleva el interes dependiendo las cuotas
 // if(plazoCuotas <= 1){
-//     interesAnual = 10;
+//      interesAnual = 10;
 // }else if(plazoCuotas < 12){
-//     interesAnual = 85;
+//      interesAnual = 85;
 // }else(plazoCuotas < 24);{
-//     interesAnual = 120;
+//      interesAnual = 120;
 // }
 
 // let montoCalculado = calculadoraProcentaje(montoIngresado, interesAnual);

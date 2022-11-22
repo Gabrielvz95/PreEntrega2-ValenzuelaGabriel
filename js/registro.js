@@ -20,7 +20,13 @@ formulario.addEventListener("submit", (e) => { // Validacion de formulario.
         this.contraseñaUsuario = contraseñaNueva;
         this.mailUsuario = mailNuevo;
     } 
-    let usuario1 = new NewUsers(userName.value, password.value, userEmail.value);
-    console.log(usuario1);
+
+    // Almaceinamiento de informacion usuario
+    
+    const usuario1 = new NewUsers(userName.value, password.value, userEmail.value);
+    const usuarioEnJSON = JSON.stringify(usuario1);
+
+    localStorage.setItem('usuario1', usuarioEnJSON); // Se guarda el nuevo usuario en Local
+    formulario.reset(); // Reinicio de formulario
 });
 
